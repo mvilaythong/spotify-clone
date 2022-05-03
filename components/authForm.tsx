@@ -9,7 +9,7 @@ const AuthForm: FC<{ mode: 'signin' | 'signup' }> = ({ mode }) => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [isLoading, setIsLoading] = useState(false)
-    const route = useRouter()
+    const router = useRouter()
 
     const handleSubmit = async  (e) => {
         e.preventDefault()
